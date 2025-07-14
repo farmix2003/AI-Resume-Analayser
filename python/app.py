@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify
 from analayzer import analyze_resume
+import spacy.cli
+spacy.cli.load("en_core_web_sm")
 
 app = Flask(__name__)
 
